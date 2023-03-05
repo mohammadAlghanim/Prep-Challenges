@@ -45,7 +45,7 @@
         {
             "language": "javascript",
             "source": [
-                "function howManyGames(p, d, m, s) {\n    // Return the number of games you can buy\nlet cost = p;\n    let gameCount = 0;\n    \n   while(cost<=s){\n       p = p- d;\n       if(p<=m){\n           cost = cost + m;\n           gameCount++;\n       } else {\n           cost = cost + p;\n           gameCount++;\n       }\n   }\n}"
+                "function howManyGames(p, d, m, s) {\n    // Return the number of games you can buy\nlet cost = p;\n    let gameCount = 0;\n    \n   while(cost<=s){\n       p = p- d;\n       if(p<=m){\n           cost = cost + m;\n           gameCount++;\n       } else {\n           cost = cost + p;\n           gameCount++;\n       }\n   }\n   return gameCount;\n}"
             ],
             "outputs": []
         },
